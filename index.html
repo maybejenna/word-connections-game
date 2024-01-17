@@ -3,14 +3,27 @@
 <head>
     <title>Word Grid Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="title">
+        <h1>Connections!</h1>
+        <h2>A clone of the New York Times "Connections" puzzle game</h2>
+    </div>
     <div id="grid-container">
         <!-- Grid squares -->
         <!-- These will be filled dynamically with JavaScript -->
     </div>
     <div id="guess-area">
+        <div id="strikes-container">
+            <span class="strike">&#9679;</span>
+            <span class="strike">&#9679;</span>
+            <span class="strike">&#9679;</span>
+            <span class="strike">&#9679;</span>
+            <span class="strike">&#9679;</span>
+        </div>
         <button id="shuffle-btn">Shuffle</button>
+        <button id="reset-btn">Clear Clicked</button>
         <button id="submit-btn">Submit</button>
     </div>
 

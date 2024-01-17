@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    padding-top: 5px;
+    margin: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; 
+    width: 95%;
+    max-width: 600px; /* Optional: maximum width */
+    text-align: center;/* Optional: your preferred font */
+}
+
+h1{
+    font-size: 60px;
+}
+h2 {
+    padding-bottom: 20px;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    border: 2px solid black;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-item:hover {
+    border: 2px solid black;
+    background-color: coral;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+}
+
+#guess-area {
+    margin-top: 20px;
+}
+
+#guess-area input {
+    margin-right: 10px;
+    /* Add more styling as needed */
+}
+
+.clicked-word {
+    border: 2px solid black; /* Customize the border as needed */
+    cursor: pointer;
+    background-color: coral;
+}
+
+.grouped-word {
+    pointer-events: none; /* Disable further clicks */
+    cursor: default;
+    color:aliceblue /* Change cursor to indicate non-clickability */
+}
+
+#strikes-container {
+    margin: 30px;
+}
+
+.strike {
+    font-size: 55px; /* Adjust size as needed */
+}
+
+.strike-used {
+    color: transparent;
+    border: 2px solid black; /* Style for the empty circle */
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    line-height: 20px;/* Adjust to vertically center the dot */
+}
+
+button {
+    height: 60px;
+    width: 150px;
+    border-radius: 2px;
+    font-size: larger;
+    margin: 6px;
+}
+
+button:hover {
+    background-color: darksalmon;
+    cursor: pointer;
+}
